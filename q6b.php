@@ -1,9 +1,6 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Validation</title>
+        <title>Password Validation</title>
 </head>
 <body>
 
@@ -22,9 +19,10 @@
             alert("Invalid password. Please use only characters a-z and numbers 0-9.");
         }
     }
-</script>
 
-<button onclick="checkPassword()">Check Password</button>
+    // Call the checkPassword function once the page loads
+    window.onload = checkPassword;
+</script>
 
 </body>
 </html>
