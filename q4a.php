@@ -5,13 +5,10 @@ if (isset($_POST['submit'])) {
     $allowed_ext = array('jpg', 'jpeg', 'png', 'gif');
     $file_name = $_FILES['file']['name'];
     $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
-    $file_size = $_FILES['file']['size'];
     $file_tmp = $_FILES['file']['tmp_name'];
   
     if (!in_array($file_ext, $allowed_ext)) {
         $message = "Error: Only JPG, JPEG, PNG, and GIF files are allowed.";
-    } elseif ($file_size > 2097152) {
-        $message = "Error: File size must be less than 2MB.";
     } else {
         $upload_directory = "uploads/";
         $upload_path = $upload_directory . $file_name;
