@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Navigation Bar</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: Arial, sans-serif;
+				display: flex; /*to make the body a flex container */
+			}
+			nav {
+				background-color: lightgray;
+				width: 10%; /*navigation bar width */
+			}
+			nav a {
+				color: black;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+				margin: 0;
+				width: 100%;
+				box-sizing: border-box; /* to include padding and border in the width */
+				display: inline-block; /* to center the text */
+			}
+			.active {
+				background-color: black;
+				color: #fff;
+			}
+			nav a:hover{
+				background-color: green;
+				color: #fff;
+			}
+			.content {
+				padding: 1%;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<a class="active" href="Q2b.html">Home </a>
+			<a href="#">News</a>
+			<a href="#">Contact</a>
+			<a href="#">About</a>
+		</nav>
+		<div class="content">
+			Hello World! <br><br>
+			Some text...
+		</div>
+	</body>
+</html>
