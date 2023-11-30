@@ -11,7 +11,9 @@
     </script>
 </head>
 <body>
-	<button id="hide-btn">Hide/Unhide me</button>
-	<p id="text">I like web programming. <br><br> I like Database Management systems</p>
+    <?php
+        echo '<button id="hide-btn">Hide/Unhide me</button>';
+        echo '<p id="text">I like web programming. <br><br> I like Database Management systems</p>';
+    ?>
 </body>
 </html>

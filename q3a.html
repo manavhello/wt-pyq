@@ -6,21 +6,19 @@
     <title>validation</title>
 </head>
 <body>
-<form onsubmit="return validateNumber()">
+<form onsubmit="validatenumber()">
     <label for="number">Enter a number:</label>
     <input type="text" id="number" name="number" required>
     <button type="submit">Submit</button>
   </form>
   
   <script>'[]'
-    function validateNumber() {
+    function validatenumber() {
       let number = document.getElementById("number").value;
       if (isNaN(number)) {
         alert("You have entered an invalid number");
-        return false;
       } else {
         alert("You have entered a valid number");
-        return true;
       }
     }
   </script>
